@@ -1,16 +1,16 @@
 import java.io.IOException;
 /* Basically init is used to created core repository for any project or program one want to
- * without it one cannot create git tree and commit 
+ * without it one cannot create git tree and commit.
  */
 public class GitJava {
     public static void main(String[] args) {
         if(args.length==0){
-            System.out.println("Usage: java GitJava <command> [args]");//if the argument or input given is blank
+            System.out.println("Usage: java GitJava <command> [args]"); //if the argument or input given is blank
                     System.out.println("---------------------- Available commands ------------------------");
-                    System.out.println("    init                Initializes an empty GitJava repository.");
-                    System.out.println("    cat-file-simple     Displays the contents of a regular file.");
-                    System.out.println("    cat-file <hash>     Displays the contents of a Git object.");
-                    System.out.println("----------------------------------------------------------------");
+                    System.out.println("    -> init                Initializes an empty GitJava repository.");
+                    System.out.println("    -> cat-file-simple     Displays the contents of a regular file.");
+                    System.out.println("    -> cat-file <hash>     Displays the contents of a Git object.");
+                    System.out.println("------------------------------------------------------------------");
             return;
         }
         String command=args[0];
